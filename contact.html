@@ -20,7 +20,18 @@
       type="text/css"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "CMPb9A0ULvr8U9i65"});
+        emailjs.send("service_7apagiv", "rosie", {name: "Aaron", notes: "The project that i want is"});
+      })();
+    </script>
     <title>Rosie</title>
+
   </head>
   <body>
     <header>
